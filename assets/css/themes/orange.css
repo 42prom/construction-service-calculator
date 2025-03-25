@@ -1,0 +1,93 @@
+/**
+ * Orange Theme for Construction Service Calculator
+ *
+ * @since      1.0.0
+ * @package    Construction_Service_Calculator
+ */
+
+/* Theme variables */
+.csc-theme-orange {
+    --csc-primary-color: #f57c00;
+    --csc-primary-color-hover: #ef6c00;
+    --csc-secondary-color: #fff3e0;
+    --csc-secondary-color-hover: #ffe0b2;
+    --csc-text-color: #333333;
+    --csc-text-light-color: #5d4037;
+    --csc-border-color: #ffcc80;
+    --csc-success-color: #e65100;
+    --csc-error-color: #d32f2f;
+    --csc-selected-bg-color: #fff8e1;
+}
+
+/* Override base styles */
+.csc-theme-orange .csc-progress-step.active .csc-step-number,
+.csc-theme-orange .csc-progress-step.completed .csc-step-number {
+    background-color: var(--csc-primary-color);
+}
+
+.csc-theme-orange .csc-progress-step.active:not(:last-child)::after,
+.csc-theme-orange .csc-progress-step.completed:not(:last-child)::after {
+    background-color: var(--csc-primary-color);
+}
+
+.csc-theme-orange .csc-progress-bar-inner {
+    background-color: var(--csc-primary-color);
+}
+
+.csc-theme-orange .csc-category-tab.active {
+    border-color: var(--csc-border-color);
+    border-bottom-color: #fff;
+    color: var(--csc-primary-color);
+}
+
+.csc-theme-orange .csc-service-item.csc-selected {
+    border-color: var(--csc-primary-color);
+    background-color: var(--csc-selected-bg-color);
+}
+
+.csc-theme-orange .csc-service-item.csc-selected .csc-service-icon svg {
+    fill: var(--csc-primary-color);
+}
+
+.csc-theme-orange .csc-show-more {
+    color: var(--csc-primary-color);
+}
+
+.csc-theme-orange .csc-show-more:hover {
+    color: var(--csc-primary-color-hover);
+}
+
+.csc-theme-orange .csc-button-primary {
+    background-color: var(--csc-primary-color);
+    border-color: var(--csc-primary-color);
+}
+
+.csc-theme-orange .csc-button-primary:hover {
+    background-color: var(--csc-primary-color-hover);
+    border-color: var(--csc-primary-color-hover);
+}
+
+.csc-theme-orange .csc-form-control:focus {
+    border-color: var(--csc-primary-color);
+}
+
+.csc-theme-orange .csc-success-message {
+    background-color: #fff3e0;
+    color: var(--csc-success-color);
+    border: 1px solid #ffe0b2;
+}
+
+/* Custom elements for orange theme */
+.csc-theme-orange .csc-summary-box {
+    background-color: var(--csc-secondary-color);
+    border-color: var(--csc-border-color);
+}
+
+.csc-theme-orange .csc-review-table th {
+    background-color: var(--csc-secondary-color);
+    color: var(--csc-primary-color);
+}
+
+.csc-theme-orange .csc-summary-total-row {
+    color: var(--csc-primary-color);
+}

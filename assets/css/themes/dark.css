@@ -1,0 +1,223 @@
+/**
+ * Dark Theme (Dark Blue) for Construction Service Calculator
+ *
+ * @since      1.0.0
+ * @package    Construction_Service_Calculator
+ */
+
+/* Theme variables */
+.csc-theme-dark {
+    --csc-primary-color: #1a237e;
+    --csc-primary-color-hover: #0d47a1;
+    --csc-secondary-color: #263238;
+    --csc-secondary-color-hover: #37474f;
+    --csc-text-color: #eceff1;
+    --csc-text-light-color: #b0bec5;
+    --csc-border-color: #455a64;
+    --csc-success-color: #00c853;
+    --csc-error-color: #ff5252;
+    --csc-selected-bg-color: #1a237e14;
+}
+
+/* Base styles for dark theme */
+.csc-theme-dark {
+    color: var(--csc-text-color);
+}
+
+.csc-theme-dark .csc-container {
+    background-color: #1e272e;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+.csc-theme-dark .csc-title,
+.csc-theme-dark .csc-step-title {
+    color: var(--csc-text-color);
+}
+
+.csc-theme-dark .csc-description {
+    color: var(--csc-text-light-color);
+}
+
+/* Progress bar */
+.csc-theme-dark .csc-progress-step .csc-step-number {
+    background-color: #37474f;
+    color: var(--csc-text-color);
+}
+
+.csc-theme-dark .csc-progress-step.active .csc-step-number,
+.csc-theme-dark .csc-progress-step.completed .csc-step-number {
+    background-color: var(--csc-primary-color);
+    color: white;
+}
+
+.csc-theme-dark .csc-progress-step:not(:last-child)::after {
+    background-color: #37474f;
+}
+
+.csc-theme-dark .csc-progress-step.active:not(:last-child)::after,
+.csc-theme-dark .csc-progress-step.completed:not(:last-child)::after {
+    background-color: var(--csc-primary-color);
+}
+
+.csc-theme-dark .csc-progress-bar {
+    background-color: #37474f;
+}
+
+.csc-theme-dark .csc-progress-bar-inner {
+    background-color: var(--csc-primary-color);
+}
+
+/* Category tabs */
+.csc-theme-dark .csc-category-tab {
+    background-color: #37474f;
+    color: var(--csc-text-color);
+    border-color: transparent;
+}
+
+.csc-theme-dark .csc-category-tab:hover {
+    background-color: #455a64;
+}
+
+.csc-theme-dark .csc-category-tab.active {
+    background-color: #263238;
+    border-color: var(--csc-border-color);
+    border-bottom-color: #263238;
+    color: var(--csc-text-color);
+}
+
+/* Service items */
+.csc-theme-dark .csc-service-item {
+    background-color: #263238;
+    border-color: #455a64;
+}
+
+.csc-theme-dark .csc-service-item:hover {
+    border-color: #607d8b;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.csc-theme-dark .csc-service-item.csc-selected {
+    border-color: var(--csc-primary-color);
+    background-color: #1a237e14;
+}
+
+.csc-theme-dark .csc-service-icon svg {
+    fill: #b0bec5;
+}
+
+.csc-theme-dark .csc-service-item.csc-selected .csc-service-icon svg {
+    fill: var(--csc-primary-color);
+}
+
+.csc-theme-dark .csc-service-name {
+    color: var(--csc-text-color);
+}
+
+.csc-theme-dark .csc-service-description,
+.csc-theme-dark .csc-service-rate,
+.csc-theme-dark .csc-quantity-label,
+.csc-theme-dark .csc-unit-symbol {
+    color: var(--csc-text-light-color);
+}
+
+.csc-theme-dark .csc-service-quantity {
+    background-color: #37474f;
+    border-color: #455a64;
+    color: var(--csc-text-color);
+}
+
+.csc-theme-dark .csc-show-more {
+    color: #64b5f6;
+}
+
+.csc-theme-dark .csc-show-more:hover {
+    color: #90caf9;
+}
+
+/* Summary and review */
+.csc-theme-dark .csc-summary-box {
+    background-color: #263238;
+    border-color: #455a64;
+}
+
+.csc-theme-dark .csc-summary-label {
+    color: var(--csc-text-light-color);
+}
+
+.csc-theme-dark .csc-summary-value,
+.csc-theme-dark .csc-summary-total-row {
+    color: var(--csc-text-color);
+}
+
+.csc-theme-dark .csc-summary-total-row {
+    border-top-color: #455a64;
+}
+
+.csc-theme-dark .csc-review-table th {
+    background-color: #37474f;
+    color: var(--csc-text-color);
+    border-bottom-color: #455a64;
+}
+
+.csc-theme-dark .csc-review-table td {
+    border-bottom-color: #455a64;
+}
+
+/* Form controls */
+.csc-theme-dark .csc-form-control {
+    background-color: #37474f;
+    border-color: #455a64;
+    color: var(--csc-text-color);
+}
+
+.csc-theme-dark .csc-form-control:focus {
+    border-color: var(--csc-primary-color);
+}
+
+.csc-theme-dark .csc-form-label,
+.csc-theme-dark .csc-form-hint {
+    color: var(--csc-text-light-color);
+}
+
+/* Buttons */
+.csc-theme-dark .csc-button-primary {
+    background-color: var(--csc-primary-color);
+    border-color: var(--csc-primary-color);
+    color: white;
+}
+
+.csc-theme-dark .csc-button-primary:hover {
+    background-color: var(--csc-primary-color-hover);
+    border-color: var(--csc-primary-color-hover);
+}
+
+.csc-theme-dark .csc-button-secondary {
+    background-color: #455a64;
+    border-color: #546e7a;
+    color: var(--csc-text-color);
+}
+
+.csc-theme-dark .csc-button-secondary:hover {
+    background-color: #546e7a;
+    border-color: #607d8b;
+}
+
+/* Success container */
+.csc-theme-dark .csc-success-message {
+    background-color: #00c8531a;
+    color: var(--csc-success-color);
+    border-color: #00c85333;
+}
+
+.csc-theme-dark .csc-print-button,
+.csc-theme-dark .csc-save-button {
+    background-color: #455a64;
+    border-color: #546e7a;
+    color: var(--csc-text-color);
+}
+
+.csc-theme-dark .csc-print-button:hover,
+.csc-theme-dark .csc-save-button:hover {
+    background-color: #546e7a;
+    border-color: #607d8b;
+}

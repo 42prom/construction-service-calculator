@@ -1,0 +1,93 @@
+/**
+ * Blue Theme for Construction Service Calculator
+ *
+ * @since      1.0.0
+ * @package    Construction_Service_Calculator
+ */
+
+/* Theme variables */
+.csc-theme-blue {
+    --csc-primary-color: #1976d2;
+    --csc-primary-color-hover: #1565c0;
+    --csc-secondary-color: #f0f7ff;
+    --csc-secondary-color-hover: #e2f0ff;
+    --csc-text-color: #263238;
+    --csc-text-light-color: #546e7a;
+    --csc-border-color: #b3e5fc;
+    --csc-success-color: #0288d1;
+    --csc-error-color: #f44336;
+    --csc-selected-bg-color: #e3f2fd;
+}
+
+/* Override base styles */
+.csc-theme-blue .csc-progress-step.active .csc-step-number,
+.csc-theme-blue .csc-progress-step.completed .csc-step-number {
+    background-color: var(--csc-primary-color);
+}
+
+.csc-theme-blue .csc-progress-step.active:not(:last-child)::after,
+.csc-theme-blue .csc-progress-step.completed:not(:last-child)::after {
+    background-color: var(--csc-primary-color);
+}
+
+.csc-theme-blue .csc-progress-bar-inner {
+    background-color: var(--csc-primary-color);
+}
+
+.csc-theme-blue .csc-category-tab.active {
+    border-color: var(--csc-border-color);
+    border-bottom-color: #fff;
+    color: var(--csc-primary-color);
+}
+
+.csc-theme-blue .csc-service-item.csc-selected {
+    border-color: var(--csc-primary-color);
+    background-color: var(--csc-selected-bg-color);
+}
+
+.csc-theme-blue .csc-service-item.csc-selected .csc-service-icon svg {
+    fill: var(--csc-primary-color);
+}
+
+.csc-theme-blue .csc-show-more {
+    color: var(--csc-primary-color);
+}
+
+.csc-theme-blue .csc-show-more:hover {
+    color: var(--csc-primary-color-hover);
+}
+
+.csc-theme-blue .csc-button-primary {
+    background-color: var(--csc-primary-color);
+    border-color: var(--csc-primary-color);
+}
+
+.csc-theme-blue .csc-button-primary:hover {
+    background-color: var(--csc-primary-color-hover);
+    border-color: var(--csc-primary-color-hover);
+}
+
+.csc-theme-blue .csc-form-control:focus {
+    border-color: var(--csc-primary-color);
+}
+
+.csc-theme-blue .csc-success-message {
+    background-color: #e1f5fe;
+    color: var(--csc-success-color);
+    border: 1px solid #b3e5fc;
+}
+
+/* Custom elements for blue theme */
+.csc-theme-blue .csc-summary-box {
+    background-color: var(--csc-secondary-color);
+    border-color: var(--csc-border-color);
+}
+
+.csc-theme-blue .csc-review-table th {
+    background-color: var(--csc-secondary-color);
+    color: var(--csc-primary-color);
+}
+
+.csc-theme-blue .csc-summary-total-row {
+    color: var(--csc-primary-color);
+}
