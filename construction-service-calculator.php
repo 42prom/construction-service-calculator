@@ -8,11 +8,11 @@
  *
  * @wordpress-plugin
  * Plugin Name:       Construction Service Cost Calculator
- * Plugin URI:        https://mikheili-nakeuri.com/plugins/construction-service-calculator
+ * Plugin URI:        https://github.com/42prom
  * Description:       A comprehensive cost calculator for construction and renovation services with real-time calculations and no registration required.
  * Version:           1.0.0
  * Author:            Mikheili Nakeuri
- * Author URI:        https://mikheili-nakeuri.com
+ * Author URI:        https://github.com/42prom
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       construction-service-calculator
